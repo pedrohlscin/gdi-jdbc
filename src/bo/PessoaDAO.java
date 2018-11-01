@@ -36,7 +36,6 @@ public class PessoaDAO {
                 java.util.Date date = df.parse(result.getString(4));
                 cli.dataNascimento = date;
                 cli.numero_cep = result.getInt(5);
-//                System.out.println(cli);
                 pessoas.add(cli);
             }
         } catch (SQLException e) {
